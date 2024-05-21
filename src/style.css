@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  font-family: Cairo;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #e6e2cd;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #5f5151;
+}
+
+.flashcards {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .flashcards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.flashcards div {
+  border: 1px solid #e7e7e7;
+  background-color: #f7f7f7;
+  border-radius: 7px;
+  aspect-ratio: 2 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5%;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+div.selected {
+  border: 1px solid #e03131;
+  background-color: #e03131;
+  color: #fff;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #5f5151;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #99cada8e;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 5%;
+  text-align: left;
+}
